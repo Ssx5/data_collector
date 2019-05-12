@@ -1,0 +1,15 @@
+
+config remoteio
+	option mqtt_port '1883'
+	option mqtt_username 'songxin'
+	option mqtt_password '123456'
+	option mqtt_client_id 'id23421'
+	option mqtt_clean_session '1'
+	option mqtt_tls_version 'tlsv1.2'
+	option modbus_type 'modbus_rtu'
+	option modbus_rtu_serial '/dev/ttyS0'
+	option modbus_rtu_baudrate '38400'
+	option modbus_rtu_slaveid '1'
+	option device_id '12'
+	option mqtt_addr '39.105.158.251'
+
