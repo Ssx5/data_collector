@@ -89,7 +89,7 @@ void mqtt_init(struct mosquitto **mosq)
     ret = mosquitto_connect(*mosq, global_config.mqtt.mqtt_addr, global_config.mqtt.mqtt_port, 600);
     if (ret != MOSQ_ERR_SUCCESS)
     {
-        printf("mosquitto_connect %s:%s error %d, errno: %d\n",global_config.mqtt.mqtt_addr,global_config.mqtt.mqtt_port, ret, errno);
+        printf("mosquitto_connect %s:%d error %d, errno: %d\n",global_config.mqtt.mqtt_addr,global_config.mqtt.mqtt_port, ret, errno);
         exit(0);
     }
 

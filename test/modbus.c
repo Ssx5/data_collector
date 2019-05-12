@@ -4,11 +4,9 @@
 #include <unistd.h>
 #include <sys/time.h>
 
-#include "rio_config.h"
-#include "rio_mqtt.h"
-#include "rio_modbus.h"
-#include "rio_thread.h"
-#include "rio_log.h"
+
+#include <../rio_modbus.h>
+#include <../rio_config.h>
 
 #define CONFIG_FILE "/etc/config/remoteio"
 
